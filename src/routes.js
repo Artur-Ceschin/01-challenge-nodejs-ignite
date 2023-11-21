@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto'
 import { Database } from "./database.js";
 import { buildRoutePath } from './utils/build-route-path.js'
 
+
 const database = new Database()
 
 const table = 'tasks'
@@ -92,5 +93,5 @@ export const routes = [
 
       return res.writeHead(204).end()
     })
-  },
+  }
 ]
